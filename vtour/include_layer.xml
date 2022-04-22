@@ -1,0 +1,8 @@
+<krpano>
+    <layer type='text' css='font-size:1.2rem;' roundedge='10' padding="10" y='10'
+        html='회의실' x='10'
+    />
+    <layer type='text' css='font-size:1.2rem;' roundedge='10' padding="10" y='10'
+        html='사무실' x='90'
+    />
+</krpano>
