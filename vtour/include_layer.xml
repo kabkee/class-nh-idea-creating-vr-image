@@ -5,4 +5,8 @@
     <layer type='text' css='font-size:1.2rem;' roundedge='10' padding="10" y='10'
         html='사무실' x='90'
     />
+    <layer url='skin/vr_icon.png' y='10' x='10' align='righttop' scale='0.2'
+        capture='false' enabled='false'
+        alpha='0.5'
+    />
 </krpano>
