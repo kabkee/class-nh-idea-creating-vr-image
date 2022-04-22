@@ -18,8 +18,7 @@
             <sphere url="panos/office.jpeg" />
         </image>
         <include url='include_hotspot.xml' />
-</scene>
-
+    </scene>
 
     <include url='include_layer.xml' />
 </krpano>
