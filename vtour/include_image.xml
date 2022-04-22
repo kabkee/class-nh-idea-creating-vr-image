@@ -1,0 +1,6 @@
+<krpano>
+    <preview url="panos/IS1_7884_Panorama.tiles/preview.jpg" />
+    <image>
+        <cube url="panos/IS1_7884_Panorama.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg" multires="512,1152,2176,4352" />
+    </image>
+</krpano>
