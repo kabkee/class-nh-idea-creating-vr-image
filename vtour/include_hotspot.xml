@@ -1,10 +1,17 @@
 <krpano>
     <!-- 항시 평면을 유지하는 형태 -->
-    <hotspot url='skin/vr_icon.png' ath='45' atv='0' scale='0.5' capture='false'
+    <hotspot style='style_vr_icon' ath='45' atv='0' scale='0.5' capture='false'
         enabled='true'
         onclick='lookto(45, 0)'
     />
     
     <!-- 특정 위치에 붙어있는 형태 : distorted -->
-    <hotspot url='skin/vr_icon.png' distorted='true' ath='0' atv='90' scale='1' capture='false' enabled='false'  />
+    <hotspot style='style_vr_icon' distorted='true' ath='0' atv='90' />
+    <!-- <hotspot url='skin/vr_icon.png' distorted='true' ath='0' atv='90' scale='1' capture='false' enabled='false'  /> -->
+
+    <style name='style_vr_icon'
+        url='skin/vr_icon.png' 
+        capture='false'
+        scale='1' enabled='false'
+    />
 </krpano>
