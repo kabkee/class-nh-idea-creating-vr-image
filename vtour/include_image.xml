@@ -21,4 +21,6 @@
     </scene>
 
     <include url='include_layer.xml' />
+
+    <events onviewchange='copy(hotspot[nadir_logo].rotate, view.hlookat)' />
 </krpano>
