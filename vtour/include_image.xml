@@ -7,10 +7,18 @@
             - vlookat 값을 -90으로 하면 천장을 봄
             - fov 값은 작을 수록 가까이 zoom in, 클수록 zoom out 효과를 보임
      -->
-    <view hlookat='0' vlookat='0' fov='120' />
-    <image>
-        <sphere url="panos/office.jpeg" />
-    </image>
+    <scene name='room'>
+        <preview url="panos/IS1_7884_Panorama.tiles/preview.jpg" />
+        <image>
+            <cube url="panos/IS1_7884_Panorama.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg" multires="512,1152,2176,4352" />
+        </image>
+    </scene>
+    <scene name='office'>
+        <image>
+            <sphere url="panos/office.jpeg" />
+        </image>
+    </scene>
+
 
     <include url='include_layer.xml' />
     <include url='include_hotspot.xml' />
