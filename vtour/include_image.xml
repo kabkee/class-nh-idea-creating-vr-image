@@ -1,4 +1,13 @@
 <krpano>
+    <!-- 
+        hlookat, vlookat 값은 0~ 원하는 값으로 넣으면 되지만 0~360도 사이 값으로 적용됨
+        예) 
+            - 0 == 360 == 720 => 값은 방향을 바라봄
+            - vlookat 값을 90으로 하면 바닥을 봄
+            - vlookat 값을 -90으로 하면 천장을 봄
+            - fov 값은 작을 수록 가까이 zoom in, 클수록 zoom out 효과를 보임
+     -->
+    <view hlookat='0' vlookat='90' fov='120' />
     <image>
         <sphere url="panos/office.jpeg" />
     </image>
