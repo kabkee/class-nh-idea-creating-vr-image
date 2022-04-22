@@ -4,8 +4,10 @@
     <layer url='skin/vr_icon.png' y='10' x='10' align='righttop' scale='0.2'
         capture='false' enabled='false'
         alpha='0.5'
+        keep='true'
     />
-    <style name='style_text_layer' 
+    <style name='style_text_layer'
+        keep='true'
         type='text' css='font-size:1.2rem;' roundedge='10' padding="10" y='10'
     />
 </krpano>
