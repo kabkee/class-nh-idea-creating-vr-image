@@ -1,1 +1,3 @@
-﻿<krpano></krpano>
+﻿<krpano>
+    <preview type="grid(CUBE,16,16,512,0xCCCCCC,0xFFFFFF,0x999999);" />
+</krpano>
