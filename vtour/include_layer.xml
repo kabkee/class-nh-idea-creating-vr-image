@@ -1,6 +1,6 @@
 <krpano>
-    <layer style='style_text_layer' html='회의실' x='10' onclick='loadscene(0)' />
-    <layer style='style_text_layer' html='사무실' x='90' onclick='loadscene(1)' />
+    <layer style='style_text_layer' html='회의실' x='10' linkedscene='room' onclick='nh_loadscene(get(linkedscene))' />
+    <layer style='style_text_layer' html='사무실' x='90' linkedscene='office' onclick='nh_loadscene_local()' />
     <layer url='skin/vr_icon.png' y='10' x='10' align='righttop' scale='0.2'
         capture='false' enabled='false'
         alpha='0.5'
@@ -10,4 +10,22 @@
         keep='true'
         type='text' css='font-size:1.2rem;' roundedge='10' padding="10" y='10'
     />
+
+    <action name='nh_loadscene'>
+        <!-- 
+            %0 은 본 action의 이름인 nh_loadscene
+            %1 ~ 은 본 action 호출시 전달 되는 파라미터. 순서별로 1부터 배정됨
+        -->
+        loadscene(%1);
+    </action>
+    <action name='nh_loadscene' args='linkedscene'>
+        <!-- 
+            %1 ~ 은 본 action 호출시 전달 되는 파라미터. 순서별로 1부터 배정됨
+            args 속성에 변수를 정의하면 해당 순서대로 %1부터 각자의 값들이 자동으로 할담 적용됨
+        -->
+        loadscene(get(linkedscene));
+    </action>
+    <action name='nh_loadscene_local' scope='local'>
+        loadscene(get(caller.linkedscene));
+    </action>
 </krpano>
